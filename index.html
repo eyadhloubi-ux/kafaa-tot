@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>كفاءة TOT</title>
+<meta name="description" content="كفاءة TOT — برنامج لبناء منظومة تدريب داخلية مستدامة في وزارة الداخلية، بالتعاون مع DOMAINS.">
+<meta name="theme-color" content="#032B27">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%23032B27'/%3E%3Cg fill='none' stroke='%23D6C597' stroke-width='1.6'%3E%3Crect x='6' y='6' width='12' height='12'/%3E%3Crect x='6' y='6' width='12' height='12' transform='rotate(45 12 12)'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="stylesheet" href="css/fonts.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body class="is-dark">
+<!--CONTENT-START-->
+<div id="app" dir="rtl">
+  <div id="bg" aria-hidden="true">
+    <div class="bg-dark"></div>
+    <svg class="bg-pat"><defs><pattern id="star8" width="96" height="96" patternUnits="userSpaceOnUse"><g fill="none" stroke="currentColor" stroke-width="1"><rect x="30" y="30" width="36" height="36"/><rect x="30" y="30" width="36" height="36" transform="rotate(45 48 48)"/><path d="M0 48h10M86 48h10M48 0v10M48 86v10"/></g></pattern></defs><rect width="100%" height="100%" fill="url(#star8)"/></svg>
+  </div>
+
+  <div id="progress"><i></i></div>
+
+  <header id="topbar">
+    <div class="tb-r">
+      <div class="mini-logo">كفاءة <b dir="ltr">TOT</b></div>
+      <span class="tb-sep"></span>
+      <span id="curTitle">الغلاف</span>
+    </div>
+    <div class="tb-l">
+      <span class="partners">وزارة الداخلية × <span dir="ltr">DOMAINS</span></span>
+      <button type="button" class="ui-btn icon" id="fsBtn" aria-label="ملء الشاشة" title="ملء الشاشة"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg></button>
+      <button type="button" class="ui-btn" id="menuBtn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span>القائمة</span></button>
+    </div>
+  </header>
+
+  <nav id="rail" aria-label="الشرائح"></nav>
+
+  <div id="pager">
+    <button type="button" class="ui-btn icon" id="prevBtn" aria-label="السابق"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 6l6 6-6 6"/></svg></button>
+    <div id="counter"><b>01</b> / 10</div>
+    <button type="button" class="ui-btn icon" id="nextBtn" aria-label="التالي"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 6l-6 6 6 6"/></svg></button>
+  </div>
+
+  <div id="menu" aria-hidden="true">
+    <div class="m-inner">
+      <div class="m-head"><div class="mini-logo">كفاءة <b dir="ltr">TOT</b></div><button type="button" class="ui-btn" id="menuClose">إغلاق ✕</button></div>
+      <div class="m-grid" id="mGrid"></div>
+    </div>
+  </div>
+
+  <main id="stage">
+
+    <!-- ============ 01 الغلاف ============ -->
+    <section class="slide dark" id="s1" data-name="الغلاف" data-group="المدخل">
+      <div class="fit cover">
+        <div class="cv-top">
+          <p class="kick rv"><span class="k-line"></span>برنامج لبناء القدرات المؤسسية</p>
+          <h1 class="wordmark ar rv" style="--d:120"><span class="w1">كفاءة</span> <span class="w2" dir="ltr">TOT</span></h1>
+          <p class="cv-sub rv" style="--d:260">منظومة تدريب داخلية مستدامة في وزارة الداخلية</p>
+          <p class="cv-pp rv" style="--d:380"><span>وزارة الداخلية</span><i></i><span dir="ltr">DOMAINS</span></p>
+        </div>
+        <div class="cv-path rv" style="--d:480">
+          <svg viewBox="0 0 1200 230" aria-hidden="true">
+            <defs>
+              <linearGradient id="cvG" x1="1" y1="0" x2="0" y2="0"><stop offset="0" stop-color="#D6C597" stop-opacity=".25"/><stop offset="1" stop-color="#D6C597" stop-opacity=".9"/></linearGradient>
+            </defs>
+            <path id="cvPath" class="cv-line" d="M1170 140 C1050 140 1010 60 890 66 C770 72 740 170 610 166 C480 162 470 66 350 66 C230 66 200 140 30 140"/>
+            <g data-dots="cvPath" data-n="5" data-dur="7" data-r="4.5"></g>
+            <g id="cvNodes" data-path="cvPath" data-labels="إعداد المدربين|تصميم الحقائب|توزيع الأدوار|التطبيق والتقييم"></g>
+          </svg>
+        </div>
+        <svg class="cv-star" viewBox="0 0 100 100" aria-hidden="true"><rect x="22" y="22" width="56" height="56"/><rect x="22" y="22" width="56" height="56" transform="rotate(45 50 50)"/><circle cx="50" cy="50" r="12"/></svg>
+      </div>
+    </section>
+
+    <!-- ============ 02 الفكرة ============ -->
+    <section class="slide dark" id="s2" data-name="الفكرة" data-group="الإطار العام">
+      <span class="bignum" aria-hidden="true">02</span>
+      <div class="fit">
+        <p class="kick rv"><span class="k-num">02</span><span class="k-line"></span>الفكرة</p>
+        <h2 class="t rv" style="--d:80">خبرة الوزارة… تتحوّل إلى منظومة تدريب</h2>
+
+        <div class="eq">
+          <div class="fx rv" style="--d:240"><b dir="ltr">DOMAINS</b><small>مهارات التدريب</small></div>
+          <span class="fx-op rv" style="--d:320">+</span>
+          <div class="fx rv" style="--d:400"><b>وزارة الداخلية</b><small>الخبرة التخصصية</small></div>
+          <span class="fx-op eqs rv" style="--d:480">=</span>
+          <div class="fx fx-res rv" style="--d:560"><b>فرق تدريبية داخلية</b><small>تنقل المعرفة إلى كل المستويات</small></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 03 المسار ============ -->
+    <section class="slide dark" id="s3" data-name="مسار البرنامج" data-group="الإطار العام">
+      <span class="bignum" aria-hidden="true">03</span>
+      <div class="fit">
+        <p class="kick rv"><span class="k-num">03</span><span class="k-line"></span>مسار البرنامج</p>
+        <h2 class="t sm rv" style="--d:80">أربع مراحل</h2>
+
+        <div class="route rv" style="--d:200">
+          <div class="rt-line" aria-hidden="true"><i></i><b></b></div>
+          <ol>
+            <li><button type="button" data-goto="4"><span class="rt-n">1</span><small>المرحلة الأولى</small><strong>إعداد المدربين <span dir="ltr">(TOT)</span></strong><em>60 ساعة</em></button></li>
+            <li><button type="button" data-goto="5"><span class="rt-n">2</span><small>المرحلة الثانية</small><strong>تصميم الحقائب التدريبية</strong><em>شهر</em></button></li>
+            <li><button type="button" data-goto="7"><span class="rt-n">3</span><small>المرحلة الثالثة</small><strong>توزيع الأدوار</strong><em>عام | تخصصي</em></button></li>
+            <li><button type="button" data-goto="8"><span class="rt-n">4</span><small>المرحلة الرابعة</small><strong>التطبيق والتقييم</strong><em>جلسات تجريبية</em></button></li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 04 المرحلة 1: TOT ============ -->
+    <section class="slide dark" id="s4" data-name="المرحلة 1: TOT" data-group="المرحلة الأولى">
+      <span class="bignum" aria-hidden="true">04</span>
+      <div class="fit">
+        <div class="stp rv" style="--s:1"><span class="stp-l">المرحلة الأولى</span><span class="stp-d"><i></i><i></i><i></i><i></i></span></div>
+        <h2 class="t rv" style="--d:80">إعداد المدربين <span dir="ltr">(TOT)</span></h2>
+        <p class="who rv" style="--d:140"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-3.6 3.6-5.5 7-5.5s6.2 1.9 7 5.5"/></svg>المستهدفون: مدربو قسم التنمية والتطوير في الوزارة، وكوادر أخرى مرشّحة</p>
+
+        <div class="tot">
+          <div class="dial rv" style="--d:200">
+            <div class="ring">
+              <svg viewBox="0 0 220 220" id="dayRing" aria-hidden="true"></svg>
+              <div class="ring-c"><b class="num" data-count="60">60</b><span>ساعة تدريبية</span></div>
+            </div>
+            <ul class="dial-facts">
+              <li><b class="num" data-count="30">30</b><span>متدرباً</span></li>
+              <li><b class="num" data-count="3">3</b><span>ساعات يومياً</span></li>
+              <li><b class="num" data-count="20">20</b><span>يوماً</span></li>
+            </ul>
+          </div>
+
+          <div>
+            <p class="sub-h rv" style="--d:260">محاور الكورس</p>
+            <ol class="axl rv" style="--d:300">
+              <li>مفهوم العملية التدريبية</li>
+              <li>أنماط المتدربين وتلقّي المعلومة</li>
+              <li>مهارات الإلقاء والتقديم</li>
+              <li>استراتيجيات التفاعل</li>
+              <li>إدارة الجلسة والجمهور</li>
+              <li>نظام <span dir="ltr">FORMAT</span></li>
+              <li>إعداد الحقيبة التدريبية</li>
+              <li>إعداد العروض التقديمية</li>
+              <li>الوسائل التدريبية</li>
+              <li>الذكاء الاصطناعي في التدريب</li>
+              <li>تقييم المدربين والتدريب</li>
+            </ol>
+
+            <p class="sub-h rv" style="--d:400">التقييم والترشيح</p>
+            <ol class="mini-flow rv" style="--d:440">
+              <li>عروض دورية</li>
+              <li>اختبارات</li>
+              <li>عرض ختامي <small>أمام الإدارة ولجنة تحكيم</small></li>
+              <li class="mf-end">ترشيح الأفضل</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 05 المرحلة 2: الحقائب ============ -->
+    <section class="slide dark" id="s5" data-name="المرحلة 2: الحقائب" data-group="المرحلة الثانية">
+      <span class="bignum" aria-hidden="true">05</span>
+      <div class="fit">
+        <div class="stp rv" style="--s:2"><span class="stp-l">المرحلة الثانية</span><span class="stp-d"><i></i><i></i><i></i><i></i></span></div>
+        <h2 class="t rv" style="--d:80">تصميم الحقائب التدريبية</h2>
+
+        <div class="bagflow">
+          <div class="bf-in">
+            <div class="fx rv" style="--d:200"><b>المدربون المرشّحون</b><small>من المرحلة الأولى</small></div>
+            <span class="fx-op rv" style="--d:260">+</span>
+            <div class="fx rv" style="--d:320"><b>مختصون تقنيون</b><small>من الوزارة، حسب الاختصاص</small></div>
+          </div>
+          <div class="bf-arrow rv" style="--d:400" aria-hidden="true"><i></i></div>
+          <div class="bf-ws rv" style="--d:460">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 9 4.5-9 4.5-9-4.5z"/><path d="m3 12 9 4.5 9-4.5"/><path d="m3 16.5 9 4.5 9-4.5"/></svg>
+            <b>ورشة عمل</b><small>شهر · لقاءات دورية</small>
+          </div>
+          <div class="bf-arrow rv" style="--d:540" aria-hidden="true"><i></i></div>
+          <div class="pyr">
+            <div class="lvl l1 rv" style="--d:600"><span class="bag"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 12h18"/></svg></span><b>حقيبة القيادات</b><em class="num" data-count="50">50</em></div>
+            <div class="lvl l2 rv" style="--d:680"><span class="bag"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 12h18"/></svg></span><b>حقيبة رؤساء الأقسام</b><em class="num" data-count="2000">2,000</em></div>
+            <div class="lvl l3 rv" style="--d:760"><span class="bag"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 12h18"/></svg></span><b>حقيبة العناصر الميدانيين</b><em class="num" data-count="22000">22,000</em></div>
+          </div>
+        </div>
+        <p class="note c rv" style="--d:840">كل حقيبة تضم مجموعة برامج تدريبية، مخصّصة لمستوى إداري واحد.</p>
+      </div>
+    </section>
+
+    <!-- ============ 06 المرحلة 2: القيادات ============ -->
+    <section class="slide dark" id="s6" data-name="حقيبة القيادات" data-group="المرحلة الثانية">
+      <span class="bignum" aria-hidden="true">06</span>
+      <div class="fit">
+        <div class="stp rv" style="--s:2"><span class="stp-l">المرحلة الثانية · حقيبة القيادات</span><span class="stp-d"><i></i><i></i><i></i><i></i></span></div>
+        <h2 class="t rv" style="--d:80">50 قائداً… وحقيبة تُصمَّم لهم خصيصاً</h2>
+
+        <ol class="flow lead-flow">
+          <li class="rv" style="--d:220">
+            <span class="ppl" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+            <b>نخبة المدربين</b><small>نحو 4 من داخل الوزارة وخارجها</small>
+          </li>
+          <li class="rv" style="--d:320">
+            <span class="fl-ic"><svg viewBox="0 0 24 24"><path d="m12 3 9 4.5-9 4.5-9-4.5z"/><path d="m3 12 9 4.5 9-4.5"/><path d="m3 16.5 9 4.5 9-4.5"/></svg></span>
+            <b>ورشة خاصة</b>
+          </li>
+          <li class="rv" style="--d:420">
+            <span class="fl-ic"><svg viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a1 1 0 0 1 1-1h4a1 1 0 0 1 1 1v2M3 12h18"/></svg></span>
+            <b>حقيبة متخصصة</b>
+          </li>
+          <li class="rv fl-end" style="--d:520">
+            <span class="dots50" id="dots50" aria-hidden="true"></span>
+            <b><span class="num" data-count="50">50</span> قائداً</b>
+          </li>
+        </ol>
+
+        <div class="chips rv" style="--d:640"><span class="ch-l">محاور مقترحة:</span><span>القيادة المؤسسية</span><span>إدارة الأزمات</span><span>اتخاذ القرار</span><span>التواصل الاستراتيجي</span></div>
+      </div>
+    </section>
+
+    <!-- ============ 07 المرحلة 3: الأدوار ============ -->
+    <section class="slide dark" id="s7" data-name="المرحلة 3: الأدوار" data-group="المرحلة الثالثة">
+      <span class="bignum" aria-hidden="true">07</span>
+      <div class="fit">
+        <div class="stp rv" style="--s:3"><span class="stp-l">المرحلة الثالثة</span><span class="stp-d"><i></i><i></i><i></i><i></i></span></div>
+        <h2 class="t rv" style="--d:80">توزيع المسارات والأدوار</h2>
+        <p class="lead rv" style="--d:160">كل برنامج يُسند إلى المدرب الأنسب لتقديمه.</p>
+
+        <div class="split rv" style="--d:240">
+          <svg class="sp-lines" viewBox="0 0 600 70" preserveAspectRatio="none" aria-hidden="true"><path id="spA" d="M300 0 C300 40 450 30 450 70"/><path id="spB" d="M300 0 C300 40 150 30 150 70"/><g data-dots="spA" data-n="2" data-dur="2.2" data-r="3.5"></g><g data-dots="spB" data-n="2" data-dur="2.2" data-r="3.5"></g></svg>
+          <div class="sp-cards">
+            <div class="sp"><span class="sp-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 5h16v10H9l-5 4z"/></svg></span><b>مدربو المهارات العامة</b><small dir="ltr">Soft Skills</small><p>المهارات الشخصية والمهنية</p></div>
+            <div class="sp"><span class="sp-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2.5v3M12 18.5v3M21.5 12h-3M5.5 12h-3M18.7 5.3l-2.1 2.1M7.4 16.6l-2.1 2.1M18.7 18.7l-2.1-2.1M7.4 7.4 5.3 5.3"/></svg></span><b>المدربون التخصصيون</b><small dir="ltr">Technical</small><p>البرامج الفنية والإجرائية</p></div>
+          </div>
+        </div>
+        <p class="note c rv" style="--d:400">لا يُشترط أن يقدّم الحقيبةَ من شارك في تصميمها.</p>
+      </div>
+    </section>
+
+    <!-- ============ 08 المرحلة 4: التطبيق ============ -->
+    <section class="slide dark" id="s8" data-name="المرحلة 4: التطبيق" data-group="المرحلة الرابعة">
+      <span class="bignum" aria-hidden="true">08</span>
+      <div class="fit">
+        <div class="stp rv" style="--s:4"><span class="stp-l">المرحلة الرابعة</span><span class="stp-d"><i></i><i></i><i></i><i></i></span></div>
+        <h2 class="t rv" style="--d:80">التطبيق والتقييم</h2>
+        <p class="lead rv" style="--d:160">جلسات تدريبية تجريبية، قبل التعميم على الوزارة.</p>
+
+        <div class="checks">
+          <div class="ck rv" style="--d:260"><span class="ck-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8"/></svg></span><b>أداء المدربين</b></div>
+          <div class="ck rv" style="--d:360"><span class="ck-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8"/></svg></span><b>فاعلية الحقائب</b></div>
+          <div class="ck rv" style="--d:460"><span class="ck-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 12 4 4 8-8"/></svg></span><b>جاهزية الفرق</b></div>
+          <div class="ck ck-go rv" style="--d:580"><span class="ck-i"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" transform="rotate(180 12 12)"/></svg></span><b>التعميم</b></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 09 المخرجات ============ -->
+    <section class="slide dark" id="s9" data-name="المخرجات" data-group="المخرجات">
+      <span class="bignum" aria-hidden="true">09</span>
+      <div class="fit">
+        <p class="kick rv"><span class="k-num">09</span><span class="k-line"></span>المخرجات</p>
+        <h2 class="t rv" style="--d:80">ما الذي تملكه الوزارة في النهاية؟</h2>
+        <ul class="outs">
+          <li class="rv" style="--d:200"><span class="o-n">01</span><b>مدربون داخليون مؤهّلون</b></li>
+          <li class="rv" style="--d:280"><span class="o-n">02</span><b>ثلاث حقائب تدريبية لكل المستويات</b></li>
+          <li class="rv" style="--d:360"><span class="o-n">03</span><b>فرق تدريبية متكاملة</b></li>
+          <li class="rv o-all" style="--d:440"><span class="o-n">04</span><b>منظومة تدريب داخلية مستدامة</b></li>
+        </ul>
+
+        <div class="band rv" style="--d:560">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20V5M6 11l6-6 6 6"/></svg>
+          <p><b>التقييم والترقي:</b> يُقيَّم كل متدرب في كل برنامج (حضور · مشاركة · اختبار)، ويُوثَّق تقييمه في حسابه على منصة البرنامج، ليكون مرجعاً في الترقي ضمن الوزارة.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ 10 الختام ============ -->
+    <section class="slide dark" id="s10" data-name="الختام" data-group="الختام">
+      <div class="fit closing">
+        <svg class="cl-star rv" viewBox="0 0 100 100" aria-hidden="true"><rect x="22" y="22" width="56" height="56"/><rect x="22" y="22" width="56" height="56" transform="rotate(45 50 50)"/><circle cx="50" cy="50" r="12"/></svg>
+        <h2 class="wordmark ar rv" style="--d:120"><span class="w1">كفاءة</span> <span class="w2" dir="ltr">TOT</span></h2>
+        <p class="cl-quote rv" style="--d:300">نبني الكفاءة من داخل المؤسسة… لتصل إلى كل فرد فيها.</p>
+      </div>
+    </section>
+
+  </main>
+</div>
+<!--CONTENT-END-->
+<script src="js/main.js"></script>
+</body>
+</html>
